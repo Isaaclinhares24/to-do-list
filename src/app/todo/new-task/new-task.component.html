@@ -1,0 +1,15 @@
+<div class="new-task">
+  <div class="new-task_input-container">
+    <label class="new-task_label" for="new-task">VAMOS FAZER!</label>
+    <input
+      id="new-task"
+      class="new-task_input"
+      type="text"
+      [(ngModel)]="newTaskTitle"
+      placeholder="Descreva sua tarefa"
+    />
+  </div>
+  <button class="new-task_button" (click)="addTask()">
+    <i class="fas fa-plus"></i>
+  </button>
+</div>

@@ -1,0 +1,20 @@
+<div class="todo-container">
+  <div class="todo-form">
+    <app-new-task></app-new-task>
+  </div>
+  <div class="todo-buttons">
+    <button class="toggle-button" (click)="toggleCompletedTasks()">
+      {{ showCompletedTasks ? 'ESCONDER TAREFAS FEITAS' : 'MOSTRAR TAREFAS FEITAS' }}
+    </button>
+    <button (click)="clearCompletedTasks()">LIMPAR TAFERAS FEITAS</button>
+    <button (click)="clearAll()">LIMPAR TUDO</button>
+  </div>
+  <div class="todo-list_container">
+    <div class="todo-list_todo">
+      <app-todo-item
+        *ngFor="let todo of todos"
+        [todo]="todo"
+      ></app-todo-item>
+    </div>
+  </div>
+</div>

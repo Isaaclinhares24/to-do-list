@@ -1,0 +1,42 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item_content {
+  display: flex;
+  align-items: baseline;
+  gap: rem;
+  margin-right: 1rem;
+}
+
+.todo-item_content label {
+  font-size: 0.85rem;
+  cursor: default;
+  user-select: none;
+}
+
+.todo-item_content input[type="checkbox"] {
+  margin-right: 0.7rem;
+  cursor: pointer;
+  accent-color: #B5B5BA;
+}
+
+.todo-item_content label.completed {
+  color: #B5B5BA;
+  text-decoration: line-through;
+}
+
+.todo-item_delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-trash-alt {
+  color: #413F3F;
+}
+
+.fa-trash-alt:hover {
+  color: rgba(65, 63, 63, 0.62);
+}
